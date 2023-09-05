@@ -3,12 +3,12 @@
   "version": "1.0.1",
   "description": "Simple function that adds padding to a given string.",
   "main": "index.js",
-  "typings": "index.d.ts",
+  "types": "index.d.ts",
   "repository": "mrozio13pl/pads",
   "author": "mrozio13pl",
   "license": "MIT",
   "scripts": {
-    "test": "uvu test .spec.js$",
+    "test": "uvu test .spec.js$ && tsd",
     "lint": "eslint ."
   },
   "files": [
@@ -35,6 +35,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
+    "tsd": "^0.29.0",
     "uvu": "^0.5.6"
   }
 }
