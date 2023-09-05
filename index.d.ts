@@ -29,4 +29,4 @@ export declare type PaddingAlignment = 'left' | 'center' | 'right'
  */
 declare function pads(str: string, length: number, align: PaddingAlignment, char?: string): string
 
-export = pads
+export default pads
