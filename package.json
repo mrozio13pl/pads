@@ -1,0 +1,40 @@
+{
+  "name": "pads",
+  "version": "0.0.0",
+  "description": "Simple function that adds padding to a given string.",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "repository": "mrozio13pl/pads",
+  "author": "mrozio13pl",
+  "license": "MIT",
+  "scripts": {
+    "test": "uvu test .spec.js$",
+    "lint": "eslint ."
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "string",
+    "padding",
+    "pad",
+    "align",
+    "fill",
+    "gap",
+    "left",
+    "right",
+    "center"
+  ],
+  "dependencies": {
+    "n-string": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "uvu": "^0.5.6"
+  }
+}
