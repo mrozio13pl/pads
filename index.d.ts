@@ -10,7 +10,7 @@ declare namespace pads {
         /**
          * Whether to reverse the alignment. Default is `false`.
          */
-        reverseAlignment?: boolean
+        readonly reverseAlignment?: boolean
     }
 }
 
@@ -20,8 +20,9 @@ declare const pads: {
      * 
      * @param {String} str - The string to add padding to.
      * @param {Number} length - Amount of padding.
-     * @param {PaddingAlignment} align - Padding alignment with *left* by default (`left` | `center` | `right`).
+     * @param {pads.PaddingAlignment} align - Padding alignment with *left* by default (`left` | `center` | `right`).
      * @param {String} char - Character used to fill the gap.
+     * @param {pads.PaddingOptions} options - Options.
      * @returns {String} The string with padding.
      * 
      * @example
