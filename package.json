@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "test": "uvu test .spec.js$ && tsd",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "publish": "clean-publish"
   },
   "files": [
     "index.js",
@@ -30,6 +31,7 @@
     "n-string": "^1.0.1"
   },
   "devDependencies": {
+    "clean-publish": "^4.2.0",
     "eslint": "^8.0.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.25.2",

@@ -3,9 +3,7 @@
 const repeatString = require('n-string')
 const { ceil, floor } = Math
 
-/**
- * Simple function that adds padding to a given string.
- */
+/** Simple function that adds padding to a given string. */
 module.exports = function (str, length, align = 'left', char = ' ', options = {}) {
     if (typeof str !== 'string') {
         throw new TypeError(`Expected \`input\` to be a \`string\`, received ${typeof str}`)
@@ -13,9 +11,7 @@ module.exports = function (str, length, align = 'left', char = ' ', options = {}
 
     if (length <= 0) return str
 
-    /**
-     * This might be removed in the next major update, most likely moving `char` to `options`.
-     */
+    // This might be removed in the next major update, most likely moving `char` to `options`.
     if (typeof char === 'object') {
         options = char
         char = ' '
